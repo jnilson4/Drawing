@@ -1,6 +1,8 @@
 package drawing.view;
 
 import javax.swing.JFrame;
+import javax.swing.WindowConstants;
+
 import java.awt.Dimension;
 import drawing.controller.DrawingController;
 
@@ -23,7 +25,9 @@ public class DrawingFrame extends JFrame
 	{
 		this.setContentPane(appPanel);
 		this.setTitle("DRAWING");
-		this.setSize(new Dimension(600, 600));
+		this.setSize(new Dimension(800, 600));
 		this.setVisible(true);
+		this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
 	}
 }
